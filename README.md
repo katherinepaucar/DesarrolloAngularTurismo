@@ -9,5 +9,5 @@ Práctica:
 - Inicio de sesión implementado con Firebase mediante email.
 - Opciones de actualizar, eliminar o añadir datos en gastronomía solo disponibles una vez iniciado sesión ( se incluye un video demo en gastronomía al acceder a uno de los platos. )
 
-Web desplega en Firebase Hosting
+Web desplegada en Firebase Hosting
 https://katherine-msl.web.app/
