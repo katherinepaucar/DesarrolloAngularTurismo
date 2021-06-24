@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"><h1>Detalle de {{ ruta.nombre }}</h1></div>
+    </div>
+
+<div class="card" style="width: 50%;margin: 0 auto">
+    <img src="{{ruta.imagen}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">{{ ruta.nombre }}</h2>
+      <p class="card-text"><span>Duracción:</span> {{ruta.duracion}} Horas</p>
+      <p class="card-text"><span> Dificultad:</span>  {{ruta.dificultad}} </p>
+      <p class="card-text"><span>Ubicación:</span> {{ruta.ubicacion}} Horas</p>
+      <p class="card-text"> <span>Detalle: </span>{{ruta.detalle}}</p>
+      <a routerLink="/ubicacion_ruta/{{ ruta.id }}" class="btn btn-primary">Ir al mapa</a>
+    </div>
+  </div>

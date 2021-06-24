@@ -1,0 +1,183 @@
+<div class="container" *ngIf="platosdetalle">
+  <mat-tab-group>
+    <mat-tab label="Conociendo más sobre el plato">
+      <div class="boton">
+        <button type="button" class="btn btn-warning" routerLink="/gastronomia">
+          Volver a Gastronomia
+        </button>
+      </div>
+      <ul>
+        <h2>{{ platosdetalle.nombre | uppercase }}</h2>
+        <li>
+          <p>
+            <span>Un poco de historia...</span>
+            {{ platosdetalle.detalle }}
+            <!--{{platosdetalle | json}} //   {{idParam}}-->
+          </p>
+        </li>
+
+        <li>
+          <img src="../../../assets/gastro/{{ platosdetalle.img }}" alt="" />
+        </li>
+      </ul>
+      <div class="logarse" *ngIf="!autenticado" >
+        <p>Debes <a class="login" routerLink="/login">Iniciar sesión</a> para poder modificar, eliminar o dar de alta un nuevo plato</p>
+        <h4>Video Demo</h4>
+        <video width= "50%" controls>
+          <source src="../../../assets/video/demogastro.webm" type="video/webm">
+          </video>
+      </div>
+      
+     
+      <table class="table table-striped table-light" *ngIf="autenticado">
+        <thead>
+          <tr>
+            <th scope="col">Logado</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">
+              <a (click)="logOutA()"> Cerrar Sesión </a>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">{{autenticado}}</td>
+            <td>Bienvenido/a, ya puedes modificar los detalles</td>
+            <td>
+              <a (click)="logOutA()">
+                <span class="material-icons"> logout </span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-tab>
+  </mat-tab-group>
+
+
+  <!---->
+  <mat-tab-group  *ngIf="autenticado" >
+    <mat-tab label="Editar">
+      <div class="fondo1">
+        <h3>Editar Registro</h3>
+        <!---->
+        <form [formGroup]="platoForm">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">ID</label>
+
+            <input type="text" disabled  class="form-control"  id="exampleFormControlInput1" placeholder="{{ idParam }}" />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nombre Plato </label>
+
+            <input type="text" class="form-control" id="exampleFormControlInput11"  formControlName="nombre" />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nombre de la foto</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" formControlName="img" />
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Descripción</label>
+            <textarea class="form-control"  id="exampleFormControlTextarea3s" rows="3" formControlName="detalle"></textarea>
+          </div>
+          <div style="text-align: center; padding-bottom: 5px">
+            <button type="button" class="btn btn-primary" (click)="guardarModificacion()" >
+              Guardar
+            </button>
+          </div>
+        </form>
+
+        <!---->
+      </div>
+    </mat-tab>
+    <mat-tab label="Eliminar">
+      <h3>Eliminar Registro</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{ idParam }}</th>
+            <td>{{ platosdetalle.nombre }}</td>
+            <td>{{ platosdetalle.img }}</td>
+            <td>{{ platosdetalle.detalle }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; padding-bottom: 5px">
+        <button type="button" class="btn btn-primary" (click)="borrar()">
+          Borrar
+        </button>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Alta">
+      <div class="fondo">
+        <!--
+                *ngIf="platoFormNuevo.get('nombre').invalid"
+              -->
+        <form [formGroup]="platoFormNuevo">
+          <h3>Formulario de Alta</h3>
+          <div class="form-group">
+            <label for="platonuevo">Nombre Plato</label>
+            <input type="text" class="form-control" id="platonuevo" formControlName="nombre" />
+            <div class="alert-danger" *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)"  >
+              <div class="container-error-message"
+                *ngIf="nombre.errors.required" >
+                Nombre es obligatorio
+              </div>
+              <div class="container-error-message"  *ngIf="nombre.errors.minlength" >
+                Nombre debe tener al menos 5 caracteres
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nuevafoto">Nombre de la foto</label>
+            <input type="text" class="form-control" id="nuevafoto" formControlName="img" />
+            <!---->
+            <div  class="alert-danger"  *ngIf="img.invalid && (img.dirty || img.touched)" >
+              <div class="container-error-message" *ngIf="img.errors.required">
+                Img es obligatorio
+              </div>
+              <div class="container-error-message" *ngIf="img.errors.minlength">
+                Img debe tener al menos 5 caracteres
+              </div>
+            </div>
+            <!---->
+          </div>
+
+          <div class="form-group">
+            <label for="nuevadescripcion">Descripción</label>
+            <textarea class="form-control" id="nuevadescripcion"  rows="3" formControlName="detalle"></textarea>
+            <!---->
+            <div  class="alert-danger" *ngIf="detalle.invalid && (detalle.dirty || detalle.touched)" >
+              <div class="container-error-message"   *ngIf="detalle.errors.required" >
+                Detalle es obligatorio
+              </div>
+              <div class="container-error-message" *ngIf="detalle.errors.minlength" >
+                Detalle debe tener al menos 5 caracteres
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center; padding-bottom: 5px">
+            <button type="button" class="btn btn-primary" (click)="insertar()">
+              Añadir
+            </button>
+          </div>
+        </form>
+
+        <!---->
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+  <!---->
+</div>

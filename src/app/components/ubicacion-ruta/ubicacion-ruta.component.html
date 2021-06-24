@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"> <h1>Ubicación</h1>  </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+
+    <div class="col-md-10">
+      <p><span>Nombre: </span> {{ ruta.nombre }}</p>
+      <p><span>Ubicación:</span> {{ ruta.ubicacion }}</p>
+      <p><span>Longitud: </span> {{ ruta.coordenadas[0] }}</p>
+      <p><span>Latitud:</span> {{ ruta.coordenadas[1] }}</p>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

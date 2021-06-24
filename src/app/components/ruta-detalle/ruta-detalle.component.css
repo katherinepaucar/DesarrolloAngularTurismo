@@ -1,0 +1,31 @@
+
+.container{
+    min-height: 600px;
+    align-items: center;
+    
+     border-right:1px dotted black;
+    border-left:1px dotted black;
+
+}
+
+.fondo{
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+    margin:6px;
+  font-size: 30px;
+}
+h2{
+    color:blue;
+    font-size: 25px;
+}
+span{
+    font-weight: bold;
+}
+p, a{
+    font-size: 18px;
+}
+img{
+    max-height: 500px;
+}

@@ -1,0 +1,35 @@
+.container{
+ 
+  background-image: url('../../../assets/fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  min-height:600px;
+
+
+}
+.titulo{
+    
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+
+
+}
+img{
+
+    width: 100%;
+    
+    
+}
+button{
+    margin: 30px;
+    font-size: 18px;
+}
+table{
+    margin:40px 10px;
+    font-size:16px;
+  
+}
+

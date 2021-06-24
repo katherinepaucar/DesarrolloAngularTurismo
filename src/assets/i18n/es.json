@@ -1,0 +1,16 @@
+{
+    "nav.inicio":"Inicio",
+    "nav.museos":"Museos",
+    "nav.rutas":"Rutas",
+    "app.titulo":"Turismo por Madrid",
+    "error.texto1":"Página no encontrada",
+    "error.texto2":"La URL introducida no es válida",
+    "error.boton":"Inicio",
+    "home.mensaje":"Bienvenid@ a la web de Turismo de la Comunidad de Madrid",
+    "museo.titulo":"Museos Destacados",
+    "mdetalle.precio":"Precio",
+    "mdetalle.horario":"Horario",
+    "mdetalle.estado":"Estado",
+    "mdetalle.tel":"Teléfono",
+    "mdetalle.boton":"Mostrar Ubicación"
+}

@@ -1,0 +1,37 @@
+.container{
+  
+    border-right:1px dotted black;
+    border-left:1px dotted black;
+  
+  }
+  
+#carouselExampleIndicators, .carousel-inner, img{
+    height: 500px;
+    margin: 0 auto;
+   
+  
+}
+.carousel-inner {
+  background-image: url(../../../assets/carrusel/madrid-2111814_1280.jpg) ;
+  background-size: contain;
+    
+}
+
+
+@media (max-width:600px) {
+  p{
+      background-color: white;
+      opacity: 0.8;
+  }
+  }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  #carouselExampleIndicators, .carousel-inner, img{
+    width:100%;
+    margin: 0 auto;
+   
+  
+}
+}

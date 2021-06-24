@@ -1,0 +1,17 @@
+{
+    "nav.inicio":"Startseite",
+    "nav.museos":"Museum",
+    "nav.rutas":"Routen",
+    "app.titulo":"Tourismus in Madrid",
+    "error.texto1":"Seite nicht gefunden",
+    "error.texto2":"Die eingegebene URL ist ungültig",
+    "error.boton":"Startseite",
+    "home.mensaje":"Willkommen auf der Tourismus-Website der Comunidad de Madrid",
+    "museo.titulo":"Ausgewählte Museen",
+    "mdetalle.precio":"Preis",
+    "mdetalle.horario":"Zeitplan",
+    "mdetalle.estado":"State",
+    "mdetalle.tel":"Telefon",
+    "mdetalle.boton":"Standort anzeigen"
+    
+}

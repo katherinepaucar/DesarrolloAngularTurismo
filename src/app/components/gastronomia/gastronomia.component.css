@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+.container{
+    
+    min-height: 600px;
+    border-right:1px dotted black;
+    border-left:1px dotted black;
+}
+.imagenfondo{
+    background-image: url(../../../assets/gastro/fotoprincipal.jpg);
+    background-size: cover;
+    transform: rotate(5deg);
+    height: 350px;
+    box-sizing: content-box;
+    margin-top: 25px;
+    
+  
+}
+ul{
+    list-style-image: url(../../../assets/list/tenedor.png);
+     margin-left: 35px;
+     list-style-position: inside;
+   
+  
+    
+}
+li{
+    font-size: 18px;
+    margin: 3px;
+    width: 310px;
+    
+}
+a , a:visited, a:active, a:link{
+    color:#002171;
+   
+    
+}
+li:hover{
+    text-decoration: none;
+    color:white;
+    background-color:#ff6f00;
+    border-radius: 5px;
+    padding: 5px;
+    width: 310px;
+}
+a:hover{
+    text-decoration: none;
+    color:white;
+   
+}
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    color:#ff6f00;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+.imagenfondo{
+    height: 300px;
+    transform: rotate(0deg);
+    margin-bottom: 5px;
+ 
+   }
+ul{
+    margin-left: 0;
+}
+li{
+font-size: 14px;
+  margin:1px;
+  width: 240px !important;;
+ 
+    
+}
+li:hover{
+    width: 200px !important;
+}
+  
+}

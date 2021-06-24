@@ -1,0 +1,141 @@
+.container{
+    border-right: 1px dotted black;
+    border-left: 1px dotted black;
+    min-height: 600px;
+  
+}
+ul{
+    list-style: none;
+    padding: 25px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color:chocolate;
+   
+}
+
+h3{
+    text-align: center;
+    background-color: white;
+    padding:5px;
+    font-size: 22px;
+}
+
+p{
+    text-align: justify;
+    font-family: 'PT Serif', serif;
+}
+
+.boton{
+    text-align: right;
+}
+.boton button{
+margin:5px;
+color:white;
+background-color: #ff6f00;
+}
+
+.boton button:hover{
+    margin:5px;
+    color:white;
+    background-color: #ff0000;
+    }
+span{
+    color:rgb(4, 4, 158);
+    font-weight: bold;
+}
+
+.form-group{
+    width:50%;
+    margin: 0 auto;
+    padding: 10px;
+   margin-top:5px;
+   margin-bottom:5px;
+
+
+}
+.fondo{
+    background-color:#28a745;
+}
+.fondo1{
+    background-color: #29434e;
+}
+label{
+    color:white
+}
+
+img{
+    width: 60%;
+}
+a:hover{
+    cursor: pointer;
+}
+table{
+    text-align: center;
+}
+/**/
+
+
+:host {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .mat-form-field {
+    min-width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    
+  }
+  mat-card-title{
+      color:white
+  }
+  mat-icon {
+    float: left;
+    opacity: 0.7;
+   padding-right: 4px;
+    color:white;
+  }
+
+p input{
+    border:none;
+      border-bottom: 1px solid blue;
+  }
+
+  p button{
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+
+mat-card{
+   /* background-color: rgb(180, 253, 253);*/
+    background-color: rgb(39, 32, 32);
+    margin:20px;
+}
+
+.alert-danger{
+    color:#721c24;
+    background-color: #f8d7da;
+    border-color:#f5c6cb;
+    margin: 5px;
+  }
+  .container-error-message{
+    padding: 3px;
+  }
+  .logarse{
+      text-align:center ;
+      color:tomato
+  }
+  .logarse p{
+      text-align: center;
+  }

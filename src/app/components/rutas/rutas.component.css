@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+.container{
+   
+    min-height: 600px;
+    border-right:1px dotted black;
+    border-left:1px dotted black;
+ 
+}
+.imagenfondo{
+    background-image: url(../../../assets/rutas-senderismo.jpg);
+    background-size: cover;
+    transform: rotate(5deg);
+    margin-top: 35px;
+    
+  
+}
+ul{
+    /*list-style-type: none;*/
+    list-style-image: url(../../../assets/list/rutas.png);
+    margin: 3px;
+    margin-left: 40px;
+}
+li{
+    font-size: 18px;
+   
+  
+}
+a , a:visited, a:active, a:link{
+    color:#002171;
+}
+a:hover{
+    text-decoration: none;
+    color:white;
+    background-color:#00b686;
+    padding: 8px;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    font-family: 'Poppins', sans-serif;
+    color:#00b686;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+   .imagenfondo{
+    height: 300px ;
+    transform: rotate(0deg);
+    margin-bottom: 5px;
+   }
+  
+}

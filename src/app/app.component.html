@@ -1,0 +1,47 @@
+<div class="container">
+
+<header>
+
+<div class="row">
+  <div class="col-md-3"> <img src="../assets/Logo.png"/></div>
+  <div class="col-md-5">  <h1>{{'app.titulo' | translate}}</h1></div>
+  <div class="col-md-4">
+    <span>
+      <a (click)="cambiarIdioma('es')">
+        <img src="../assets/banderas/es.png"/>
+      </a>
+      <a (click)="cambiarIdioma('en')">
+        <img src="../assets/banderas/en.png"/>
+      </a>
+      <a  (click)="cambiarIdioma('fr')">  
+        <img src="../assets/banderas/fr.png"/>
+      </a>
+      <a (click)="cambiarIdioma('de')">
+        <img src="../assets/banderas/de.png"/>
+      </a>
+     
+    
+    
+    </span>
+  </div>
+</div>
+
+ 
+
+
+</header>
+
+<app-navbar></app-navbar>
+<section>
+  <router-outlet></router-outlet>
+
+  
+</section>
+<footer>
+  <blockquote class="blockquote text-right">
+  <span> © 2021</span>
+   Página realizada por <cite title="Source Title">Katherine Paucar</cite>
+  </blockquote>
+
+</footer>
+</div>

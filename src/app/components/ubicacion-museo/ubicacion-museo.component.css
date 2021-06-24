@@ -1,0 +1,29 @@
+agm-map {
+
+height: 500px;
+margin: 10px;
+  }
+.fondo{
+  margin-top: 200px;
+  align-items: center;
+  height:180px ;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+.container{
+  background-color: #eeeeee;
+  background-image:url(../../../assets/velazquez.jpg) ;
+  text-align: center;
+}
+a{
+  text-decoration:none;
+  
+}
+a:visited{
+  color:blue;
+}
+h2{
+  font-weight: bold;
+}

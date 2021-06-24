@@ -1,0 +1,16 @@
+{
+    "nav.inicio":"Accueil",
+    "nav.museos":"Musée",
+    "nav.rutas":"Routes",
+    "app.titulo":"Tourisme à Madrid",
+    "error.texto1":"Page non trouvée",
+    "error.texto2":"L'URL saisie n'est pas valide",
+    "error.boton":"Accueil",
+    "home.mensaje":"    Bienvenue sur le site web du tourisme de la Comunidad de Madrid",
+    "museo.titulo":"Musées en vedette",
+    "mdetalle.precio":"Prix",
+    "mdetalle.horario":"Schedule",
+    "mdetalle.estado":"État",
+    "mdetalle.tel":"Téléphone",
+    "mdetalle.boton":"Afficher l'emplacement"
+}

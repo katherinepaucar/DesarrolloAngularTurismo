@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/proyecto-turismo",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

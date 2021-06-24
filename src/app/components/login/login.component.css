@@ -1,0 +1,100 @@
+.container{
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+  min-height: 500px;
+}
+.fondo{
+    background-color: rgba(0, 0, 255, .5);;
+    width: 50%;
+    margin:0 auto;
+    margin-top: 100px;
+    border-left: 1px dotted black;
+}
+
+
+:host {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .mat-form-field {
+    min-width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    
+  }
+  mat-card-title{
+      color:white
+  }
+  mat-icon {
+    float: left;
+    opacity: 0.7;
+   padding-right: 4px;
+    color:white;
+  }
+
+p input{
+    border:none;
+    
+  }
+
+  p button{
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+
+mat-card{
+   /* background-color: rgb(180, 253, 253);*/
+    background-color: rgb(39, 32, 32);
+    margin:20px;
+}
+
+.alert-danger{
+    color:#721c24;
+    background-color: #f8d7da;
+    border-color:#f5c6cb;
+    margin: 5px;
+  }
+  .container-error-message{
+    padding: 3px;
+  }
+  input:focus{
+      color:red;
+      background-color: white;
+      padding: 5px;
+  }
+
+  .cerrarsesion{
+    color:white;
+    text-align: center !important;
+  }
+  .cerrarsesion a:hover p:hover{
+    cursor: pointer;
+  }
+
+  @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .fondo{
+    background-color: rgba(0, 0, 255, .5);;
+    width: 100%;
+   
+}
+form {
+  width: 100%;
+}
+
+input{
+  width: 80%;
+}
+
+
+}

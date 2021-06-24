@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class=row>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2>{{"museo.titulo" | translate}}</h2>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+    
+        <div class="col-md-6 col-sm-6">
+            <ul>
+                <li *ngFor="let museo of museos">
+                    <!--Esta ruta se indica en el app module ts-->
+                    <a routerLink='/museo_detalle/{{museo.id}}'>{{museo.nombre}}</a>
+            
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-md-5 imagenfondo">
+        
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+</div>
+
+
+
+ 

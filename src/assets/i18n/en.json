@@ -1,0 +1,17 @@
+{
+    "nav.inicio":"Home",
+    "nav.museos":"Museum",
+    "nav.rutas":"Routes",
+    "app.titulo":"Tourism in Madrid",
+    "error.texto1":"page not found",
+    "error.texto2":"Boo, looks like a ghost stole this page!",
+    "error.boton":"Home",
+    "home.mensaje":"Welcome to the Tourism website of the Comunidad de Madrid",
+    "museo.titulo":"Featured Museums",
+    "mdetalle.precio":"Price",
+    "mdetalle.horario":"Schedule",
+    "mdetalle.estado":"State",
+    "mdetalle.tel":"Telephone",
+    "mdetalle.boton":"Show Location"
+
+}

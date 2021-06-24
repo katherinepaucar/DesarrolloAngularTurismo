@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+.container{
+ 
+    min-height: 600px;
+    border-right:1px dotted black;
+    border-left:1px dotted black;
+ 
+}
+.imagenfondo{
+    background-image: url(../../../assets/Las_Meninas_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(5deg);
+    margin-top: 25px;
+
+    
+    
+  
+}
+ul{
+    /*list-style-type: none;*/
+    list-style-image: url(../../../assets/list/paint.png);
+    margin-left: 10px;
+     list-style-position: inside;
+   
+}
+li{
+    font-size: 18px;
+    margin:4px
+}
+a , a:visited, a:active, a:link{
+    color:#002171;
+}
+a:hover{
+    text-decoration: none;
+    background-color: rgba(214, 11, 18, 0.733);
+    padding: 8px;
+    border-radius: 5px;
+   color: white;
+}
+h2{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(214, 11, 18, 0.733);
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+   .imagenfondo{
+    height: 300px ;
+    transform: rotate(0deg);
+    margin-bottom: 5px;
+    margin-left: 6%;
+   }
+  
+}

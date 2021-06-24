@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-6">
+    <mat-card class="fondo" *ngIf="!autenticado">
+      <mat-card-title>Login</mat-card-title>
+      <mat-card-content>
+        <form>
+          <p>
+            <mat-icon mat-list-icon class="iconos">mail_outline</mat-icon>
+            <mat-form-field class="inputFondo">
+              <input
+                type="text" name="email" matInput placeholder="Email" [(ngModel)]="email" required />
+              <mat-error >
+                Please provide a valid email address
+              </mat-error>
+            </mat-form-field>
+          </p>
+  
+          <p>
+            <mat-icon mat-list-icon class="iconos">lock</mat-icon>
+            <mat-form-field>
+              <input type="password" name="password" matInput placeholder="Password" [(ngModel)]="password" required/>
+              <mat-error >
+                Please provide a valid password
+              </mat-error>
+            </mat-form-field>
+            <br />
+            <button type="button" class="btn btn-primary" (click)="login()">
+              Login
+            </button>
+          </p>
+        </form>
+
+      </mat-card-content>
+      
+    </mat-card>
+    <div>
+  </div>
+    
+    <mat-card class="cerrarsesion" *ngIf="autenticado">
+      
+      <a (click)="logOutA()">
+        <p>Cerrar Sesión</p>
+        <span class="material-icons"> logout </span>
+      </a>
+
+    </mat-card>
+
+   
+
+</div>
